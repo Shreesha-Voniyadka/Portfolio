@@ -14,7 +14,7 @@ function Home() {
       <Button bsPrefix="super-btn" variant="primary">
         Super button
       </Button> */}
-      <Navigbar />
+      {/* <Navigbar /> */}
     </div>
   );
 }
