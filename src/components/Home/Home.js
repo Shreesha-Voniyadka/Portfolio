@@ -1,13 +1,15 @@
 import React from 'react';
-import ThemeProvider from 'react-bootstrap/ThemeProvider';
-import Button from "react-bootstrap/Button";
-import Navigbar from '../../Navigationbar/navigationbar'
+import Avatar from '../../Assets/myAvatar.svg';
+
 
 function Home() {
   return (
     <div>
       {/* Your Home component content */}
+      
       <h1> Portfolio </h1>
+      <img src={Avatar} className="App-logo" alt="logo" />
+
       {/* <ThemeProvider prefixes={{ btn: 'my-btn' }}>
         <Button variant="primary">My Button</Button>
       </ThemeProvider>
