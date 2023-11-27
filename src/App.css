@@ -1,11 +1,22 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background-image: url('./Assets/colorful-graphic-with-circle-middle.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 100%;
-  width: 100%;
+  /* background-image: url('./Assets/colorful-graphic-with-circle-middle.jpg'); */
+  background-color: yellow;
+  height: 100vh;
+}
+
+.cursor {
+  background-color: #111;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
 .App-logo {

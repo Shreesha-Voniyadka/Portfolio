@@ -1,5 +1,6 @@
 import React from 'react';
-import Avatar from '../../Assets/myAvatar.svg';
+// import Avatar from '../../Assets/myAvatar.svg';
+
 
 
 function Home() {
@@ -8,7 +9,8 @@ function Home() {
       {/* Your Home component content */}
       
       <h1> Portfolio </h1>
-      <img src={Avatar} className="App-logo" alt="logo" />
+      {/* <img src={Avatar} className="App-logo" alt="logo" /> */}
+      
 
       {/* <ThemeProvider prefixes={{ btn: 'my-btn' }}>
         <Button variant="primary">My Button</Button>

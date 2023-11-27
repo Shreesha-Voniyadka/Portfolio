@@ -11,13 +11,19 @@ import Resume from './components/Resume/resume'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 // import video from './Assets/production_id.mp4'
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 import './App.css';
 
 function App() {
-  return (
-    
-    <div className="App">
+  const [mousePosition, setmousePosition] = useState({
+    x:0,
+    y:0
+  });
+  return (   
+      <div className="App">
+
       {/* <video src={video} className='bgvedio' autoPlay loop muted /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
