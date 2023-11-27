@@ -17,37 +17,46 @@ import { motion } from 'framer-motion';
 import './App.css';
 
 function App() {
+  //   hit = state variable
+  // setHit = function to update state variable
   const [mousePosition, setmousePosition] = useState({
-    x:0,
-    y:0
+    x: 0,
+    y: 0
   });
-  return (   
-      <div className="App">
+  useEffect(() => {
+    const mouseMove = e => {
+      setmousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
 
-      {/* <video src={video} className='bgvedio' autoPlay loop muted /> */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    }
+    window.addEventListener("mousemove", mouseMove);
+    return () => {
+      window.removeEventListener("mousemove", mouseMove)
+    }
+  }, []);
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const variants = {
+    default:{
+      x:mousePosition.x-16,
+      y:mousePosition.y-16
+    }
+  }
 
+
+
+  return (
+    <div className="App">
+      <motion.div className="cursor" variants={variants} animate={cursorVariant}/>
       <Router>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            {/* <Route path="/navbar" element={<Navibar />} /> */}
-            <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          {/* <Route path="/navbar" element={<Navibar />} /> */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </div>
