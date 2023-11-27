@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div>
       {/* Your Resume component content */}
-      <h1> Portfolio </h1>
+      <h1> Resume </h1>
       {/* <ThemeProvider prefixes={{ btn: 'my-btn' }}>
         <Button variant="primary">My Button</Button>
       </ThemeProvider>

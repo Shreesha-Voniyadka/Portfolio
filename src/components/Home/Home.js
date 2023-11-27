@@ -8,7 +8,7 @@ function Home() {
     <div>
       {/* Your Home component content */}
       
-      <h1> Portfolio </h1>
+      <h1> Home.. Landing page </h1>
       {/* <img src={Avatar} className="App-logo" alt="logo" /> */}
       
 

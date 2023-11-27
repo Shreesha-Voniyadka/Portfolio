@@ -1,18 +1,13 @@
 // import logo from './logo.svg';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-// import Navibar from '../src/Navigationbar/navigationbar'
+import {  BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Navibar from '../src/Navigationbar/navigationbar'
 import Projects from './components/Projects/project'
 import Resume from './components/Resume/resume'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 // import video from './Assets/production_id.mp4'
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { SwitchLayoutGroupContext, motion } from 'framer-motion';
 
 import './App.css';
 
@@ -38,9 +33,9 @@ function App() {
   }, []);
   const [cursorVariant, setCursorVariant] = useState("default");
   const variants = {
-    default:{
-      x:mousePosition.x-16,
-      y:mousePosition.y-16
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16
     }
   }
 
@@ -48,16 +43,19 @@ function App() {
 
   return (
     <div className="App">
-      <motion.div className="cursor" variants={variants} animate={cursorVariant}/>
+      <motion.div className="cursor" variants={variants} animate={cursorVariant} />
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          {/* <Route path="/navbar" element={<Navibar />} /> */}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        <div>
+          <Navibar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project" element={<Projects />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/resume" element={<Resume />} />
+              {/* <Route path="/navbar" element={<Navibar />} /> */}
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </div>
       </Router>
     </div>
   );
