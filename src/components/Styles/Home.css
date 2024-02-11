@@ -1,8 +1,9 @@
 body {
-    background-image: url('../../Assets/1349697.jpeg');
+    background-image: url('../../Assets/Images/1349697.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    font-family: ProtestRevolution-Regular;
 }
 
 .Container {
