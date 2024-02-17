@@ -1,5 +1,9 @@
 @font-face {
-  font-family: ProtestRevolution-Regular;
+  font-family: Pro1;
   src: url('./Assets/Fonts/ProtestRevolution-Regular.ttf');
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}

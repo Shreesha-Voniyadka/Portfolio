@@ -2,7 +2,7 @@ import "./index.css";
 
 function Home() {
   return (
-    <div>
+    <div className="Homebody">
       <h1>Home</h1>
     </div>
   );

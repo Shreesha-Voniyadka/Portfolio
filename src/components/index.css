@@ -1,0 +1,30 @@
+.Homebody {
+    background-image: url('../Assets/Images/strawhat.jpeg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Pro1;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.Navi {
+    background-color: black;
+    height: 50px;
+}
+
+.Navi ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+.Navi ul {
+    padding-top: 10px;
+}
+.Navi ul li{
+    display: inline;
+    margin: 40px;
+    text-align: center;
+}
