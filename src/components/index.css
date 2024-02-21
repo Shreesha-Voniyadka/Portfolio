@@ -8,23 +8,23 @@
     color: white;
     letter-spacing: 10px;
 }
-
-.Navi {
+.Navi{
     background-color: black;
-    height: 50px;
+    min-height: 70px;
+    
+}
+
+.Navi ul li {
+    display: inline;
+}
+.Navi ul{
+    padding-top: 20px;
+    text-align: right;
 }
 
 .Navi ul li a{
     text-decoration: none;
+    margin: 50px;
     color: white;
     font-family: cursive;
-}
-
-.Navi ul {
-    padding-top: 10px;
-}
-.Navi ul li{
-    display: inline;
-    margin: 40px;
-    text-align: center;
 }
