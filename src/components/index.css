@@ -2,29 +2,56 @@
     background-image: url('../Assets/Images/strawhat.jpeg');
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
-    text-align: center;
     font-family: Pro1;
-    color: white;
-    letter-spacing: 10px;
-}
-.Navi{
-    background-color: black;
-    min-height: 70px;
+    height: 100vh;
     
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(247, 212, 131);
+    float: left; 
+}
+
+.Navi {
+    background-color: rgb(131, 0, 200);
+    min-height: 70px;
 }
 
 .Navi ul li {
     display: inline;
 }
-.Navi ul{
+
+.Navi ul {
     padding-top: 20px;
     text-align: right;
 }
 
-.Navi ul li a{
+.Navi ul li a {
     text-decoration: none;
     margin: 50px;
-    color: white;
-    font-family: cursive;
+    color: rgb(247, 212, 131);
+    font-family: Pro1;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+.container{
+    letter-spacing: 2px;
+    padding:70px;
+}
+p{
+    color: rgb(247,212,131);
+    padding-top: 70px;
+    font-size: 34px;
+    text-decoration: solid;
+}
+
+
+.gifcontainer{
+    float: right;
+    margin: 30px;
+    width: 220px;
+    max-height: 100vh;
+    padding-right: 70px;
 }
